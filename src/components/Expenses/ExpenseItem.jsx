@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
@@ -12,16 +12,16 @@ const ExpenseItem = (props) => {
 
     // let title = props.title;
 
-    const [title, setTitle] = useState(props.title);
+    // const [title, setTitle] = useState(props.title);
 
 
-    const clickHandler = () => {
-        // console.log("clicked!!");
+    // const clickHandler = () => {
+    //     // console.log("clicked!!");
 
-        // title = 'updated!';
-        setTitle("updated!!");
+    //     // title = 'updated!';
+    //     setTitle("updated!!");
 
-    };
+    // };
 
 
     return (
@@ -29,10 +29,10 @@ const ExpenseItem = (props) => {
         <ExpenseDate date={props.date} />
 
         <div className="expense-item__description">
-          <h2> {title} </h2>
+          <h2> {props.title} </h2>
           <div className="expense-item__price">${props.amount}</div>
         </div>
-        <button onClick={ clickHandler } >Change Title</button>
+        {/* <button onClick={ clickHandler } >Change Title</button> */}
       </Card>
     );
 };
