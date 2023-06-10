@@ -6,25 +6,24 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
-    // const expenseDate = props.date;
-    // const expenseTitle = props.title;
-    // const expenseAmount = props.amount;
+  // const expenseDate = props.date;
+  // const expenseTitle = props.title;
+  // const expenseAmount = props.amount;
 
-    // let title = props.title;
+  // let title = props.title;
 
-    // const [title, setTitle] = useState(props.title);
+  // const [title, setTitle] = useState(props.title);
 
+  // const clickHandler = () => {
+  //     // console.log("clicked!!");
 
-    // const clickHandler = () => {
-    //     // console.log("clicked!!");
+  //     // title = 'updated!';
+  //     setTitle("updated!!");
 
-    //     // title = 'updated!';
-    //     setTitle("updated!!");
+  // };
 
-    // };
-
-
-    return (
+  return (
+    <li>
       <Card className="expense-item">
         <ExpenseDate date={props.date} />
 
@@ -34,7 +33,8 @@ const ExpenseItem = (props) => {
         </div>
         {/* <button onClick={ clickHandler } >Change Title</button> */}
       </Card>
-    );
+    </li>
+  );
 };
 
 export default ExpenseItem;
